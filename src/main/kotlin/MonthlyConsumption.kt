@@ -1,6 +1,7 @@
 import java.time.LocalDate
 import java.time.Month
 import kotlin.math.pow
+import kotlin.math.roundToInt
 
 class MonthlyConsumption(val beginDate: LocalDate,
                          val endDate:LocalDate,
@@ -13,8 +14,8 @@ class MonthlyConsumption(val beginDate: LocalDate,
         return endIndx - beginIndx
     }
 
-    fun getConsumptionKWh():Double{
-        return (getConsumptionM3()*kpcs).pow(1)
+    fun getConsumptionKWh():Int{
+        return (getConsumptionM3()*kpcs).roundToInt()
     }
 
     fun getYear():Int{
