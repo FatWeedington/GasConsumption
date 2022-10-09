@@ -1,3 +1,5 @@
+package model
+
 import java.time.Month
 
 class YearlyConsumption(val year:Int) {

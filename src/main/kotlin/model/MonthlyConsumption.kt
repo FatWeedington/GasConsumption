@@ -1,3 +1,5 @@
+package model
+
 import java.time.LocalDate
 import java.time.Month
 import kotlin.math.pow
