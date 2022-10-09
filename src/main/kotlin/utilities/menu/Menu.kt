@@ -23,7 +23,7 @@ class Menu() : Runnable {
             val input = readLine()
             if (menuItems[input] == null) {
                 println("Incorrect Input")
-            } else if (input == "q") {
+            } else if (input == "Q") {
                 quit = true
             } else {
                 menuItems[input]!!.performAction()
