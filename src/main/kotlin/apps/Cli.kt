@@ -4,6 +4,7 @@ import model.Data
 import utilities.ConsoleInput
 import utilities.menu.Menu
 import utilities.menu.MenuItem
+import utilities.round
 import utilities.validators.MonthlyConsumptionValidator
 import utilities.validators.UnitValidator
 import utilities.validators.YearlyConsumptionValidator
@@ -42,7 +43,7 @@ fun initMenu(): Menu {
             print(monthlyConsumption.getConsumptionM3().toString()+"m3"+"\n"+"\n")
         }
         else {
-            print(monthlyConsumption.getConsumptionKWh().toString()+"kWh"+"\n"+"\n")
+            print(round(monthlyConsumption.getConsumptionKWh(),2).toString()+"kWh"+"\n"+"\n")
         }
     }
 
