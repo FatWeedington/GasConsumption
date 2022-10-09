@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="daegg">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/ConsoleInput.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/menu/Menu.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/menu/MenuItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/round.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/MonthlyConsumptionValidator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/UnitValidator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/Validator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/YearlyConsumptionValidator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Data.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Data.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/CsvReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/CsvReader.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +90,7 @@
       <workItem from="1664882000920" duration="2701000" />
       <workItem from="1664969417327" duration="4449000" />
       <workItem from="1665298029956" duration="2662000" />
-      <workItem from="1665301035104" duration="21784000" />
+      <workItem from="1665301035104" duration="22188000" />
     </task>
     <task id="LOCAL-00001" summary="daegg">
       <created>1664884003207</created>
@@ -133,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665303343161</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="daegg">
+      <created>1665323072827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665323072827</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

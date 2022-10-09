@@ -29,7 +29,7 @@ private val data = Data()
     private val queryYear = Runnable {
         val yearlyConsumption = ConsoleInput("Enter year",YearlyConsumptionValidator(), data).enterValue()
         println(String.format("%-5s %-13s %-17s %-9s %-10s %-8s %-10s %-10s","Year","Total Months", "TotalConsumption","Max","Max_Month","Min","Min_Month","Average"))
-        println(yearlyConsumption)
+        println(yearlyConsumption.toString()+"\n")
     }
 
     private val queryMonth = Runnable {
@@ -39,22 +39,23 @@ private val data = Data()
             monthlyConsumption.getMonth().name.lowercase()
                 .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }+" "+monthlyConsumption.getYear()))
         if (unit){
-            print(monthlyConsumption.getConsumptionM3().toString()+"m3"+"\n")
+            print(monthlyConsumption.getConsumptionM3().toString()+"m3"+"\n"+"\n")
         }
         else {
-            print(monthlyConsumption.getConsumptionKWh().toString()+"kWh"+"\n")
+            print(monthlyConsumption.getConsumptionKWh().toString()+"kWh"+"\n"+"\n")
         }
     }
 
     val calcMonths = Runnable {
         println(String.format("%-16s %-17s %-18s","Month and Year", "Consumption m3","Consumption kWh"))
         data.getMonthlyConsumptions().forEach { println(it) }
-
+        println()
     }
 
     private val calcYears = Runnable {
         println(String.format("%-5s %-13s %-17s %-9s %-10s %-8s %-10s %-10s","Year","Total Months", "TotalConsumption","Max","Max_Month","Min","Min_Month","Average"))
         data.getYearlyConsumptions().forEach { println(it)}
+        println()
     }
 
     fun main() {
