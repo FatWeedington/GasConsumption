@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter
 
 fun readCSV(data: Data){
     //read file line by line
-    val lines :List<String> = File(System.getProperty("data"+File.separator+"gasreading.csv")).readLines()
+    val lines :List<String> = File("data"+File.separator+"gasreading.csv").readLines()
 
     // iterate throug lines of csv
     for(l in lines.subList(1, lines.size)){

@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="daegg">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/gasreading.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Data.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/CsvReader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/ConsoleInput.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/menu/Menu.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/menu/MenuItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/round.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/MonthlyConsumptionValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/UnitValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/Validator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/YearlyConsumptionValidator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MonthlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/YearlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Data.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Data.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/CsvReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/CsvReader.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
         <option value="Class" />
         <option value="Kotlin Class" />
       </list>
@@ -40,17 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fatweedington/IdeaProjects/prog2/GasConsumption/src/main/kotlin/model&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/fatweedington/IdeaProjects/Kotlin/GasConsumption/src/main/kotlin/utilities/validators"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fatweedington\IdeaProjects\Kotlin\GasConsumption\src\main\kotlin\utilities\validators" />
+      <recent name="C:\Users\fatweedington\IdeaProjects\Kotlin\GasConsumption\src\main\kotlin\utilities\menu" />
       <recent name="C:\Users\fatweedington\IdeaProjects\prog2\GasConsumption\src\main\kotlin\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -58,6 +67,13 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="CliKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="apps.CliKt" />
+      <module name="GasConsumption" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,6 +85,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.CliKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +103,7 @@
       <workItem from="1664882000920" duration="2701000" />
       <workItem from="1664969417327" duration="4449000" />
       <workItem from="1665298029956" duration="2662000" />
-      <workItem from="1665301035104" duration="2291000" />
+      <workItem from="1665301035104" duration="21784000" />
     </task>
     <task id="LOCAL-00001" summary="daegg">
       <created>1664884003207</created>
@@ -105,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665298087148</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="daegg">
+      <created>1665303343161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665303343161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,5 +153,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="daegg" />
     <option name="LAST_COMMIT_MESSAGE" value="daegg" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

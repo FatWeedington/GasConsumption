@@ -1,10 +1,13 @@
 package model
 
+import utilities.round
 import java.time.Month
+import java.util.*
+import kotlin.math.roundToInt
 
 class YearlyConsumption(val year:Int) {
 
-    var monthlyConsumptions:MutableList<MonthlyConsumption> = mutableListOf()
+    private val monthlyConsumptions:MutableList<MonthlyConsumption> = mutableListOf()
 
     fun addConsumption(monthlyConsumption:MonthlyConsumption){
         monthlyConsumptions.add(monthlyConsumption)
@@ -14,15 +17,15 @@ class YearlyConsumption(val year:Int) {
         return monthlyConsumptions.size
     }
 
-    fun getTotalConsumption():Int{
+    fun getTotalConsumption():Double{
         return monthlyConsumptions.map {c -> c.getConsumptionKWh()}.sum()
     }
 
-    fun getMaxConsumption():Int{
+    fun getMaxConsumption():Double{
         return monthlyConsumptions.map {c -> c.getConsumptionKWh()}.max()
     }
 
-    fun getMinConsumption():Int{
+    fun getMinConsumption():Double{
         return monthlyConsumptions.map {c -> c.getConsumptionKWh()}.min()
     }
 
@@ -35,7 +38,13 @@ class YearlyConsumption(val year:Int) {
     }
 
     fun getAverage():Double{
-        return monthlyConsumptions.map {c -> c.getConsumptionKWh()}.average()
+        return round(monthlyConsumptions.map {c -> c.getConsumptionKWh()}.average(),2)
+    }
+
+    override fun toString():String{
+        return String.format("%-5s %-13s %-17s %-9s %-10s %-8s %-10s %-10s",year,getMonthsTotal(),getTotalConsumption().roundToInt().toString()+"kWh",getMaxConsumption().roundToInt().toString()+"kWh",getMaxMonth().name.lowercase(
+            Locale.getDefault()).replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },getMinConsumption().roundToInt().toString()+"kWh",getMinMonth().name.lowercase(
+            Locale.getDefault()).replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },getAverage())
     }
 }
 
