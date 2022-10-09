@@ -6,7 +6,9 @@ import java.io.File
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-fun readCSV(data: Data){
+//function to generate a list Monthlyconsumption Objects based on data stored in file gasreading.csv
+fun readCSV():List<MonthlyConsumption>{
+    val consumptions:MutableList<MonthlyConsumption> = ArrayList()
     //read file line by line
     val lines :List<String> = File("data"+File.separator+"gasreading.csv").readLines()
 
@@ -24,8 +26,7 @@ fun readCSV(data: Data){
 
         //Creates a new Monthly consumption Object
         val monthlyConsumption = MonthlyConsumption(beginDate,endDate,beginIndex,endIndex,kpsc)
-
-        //add created object to data class object
-        data.addMonthlyConsumption(monthlyConsumption)
+        consumptions.add(monthlyConsumption)
        }
+    return consumptions.toList()
 }

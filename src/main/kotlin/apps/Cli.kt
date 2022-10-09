@@ -8,19 +8,19 @@ import utilities.validators.MonthlyConsumptionValidator
 import utilities.validators.UnitValidator
 import utilities.validators.YearlyConsumptionValidator
 import java.util.*
-import kotlin.math.roundToInt
 
 
 private val data = Data()
 
-     fun initMenu(): Menu {
+//initializes Menu and Menu items for cli application
+fun initMenu(): Menu {
         val mainMenu = Menu()
 
         mainMenu.add(MenuItem("cm", "Calculate consumptions for every Month", calcMonths))
         mainMenu.add(MenuItem("cy", "Calculate consumptions for every Year", calcYears))
         mainMenu.add(MenuItem("m", "Get information about a specific month", queryMonth))
         mainMenu.add(MenuItem("y", "Get information about a specific year", queryYear))
-        mainMenu.add(MenuItem("q", "Quit Application", null))
+        mainMenu.add(MenuItem("Q", "Quit Application", null))
 
         return mainMenu;
     }
@@ -46,7 +46,7 @@ private val data = Data()
         }
     }
 
-    val calcMonths = Runnable {
+    private val calcMonths = Runnable {
         println(String.format("%-16s %-17s %-18s","Month and Year", "Consumption m3","Consumption kWh"))
         data.getMonthlyConsumptions().forEach { println(it) }
         println()
@@ -58,7 +58,8 @@ private val data = Data()
         println()
     }
 
-    fun main() {
+//starts program
+fun main() {
         initMenu().run()
     }
 

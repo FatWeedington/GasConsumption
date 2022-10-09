@@ -4,6 +4,7 @@ import model.Data
 import model.MonthlyConsumption
 import model.YearlyConsumption
 
+//validator checks string input with regex and searches data object for secified year throws exeption if year is not found
 class YearlyConsumptionValidator: Validator<YearlyConsumption>{
 
     override fun validate(string: String, data:Data): YearlyConsumption {
@@ -13,7 +14,11 @@ class YearlyConsumptionValidator: Validator<YearlyConsumption>{
             } else {
                 throw Exception("")
             }
-
-            return data.searchYearlyConsumption(year)
+            if(data.searchYearlyConsumption(year)!= null){
+                return data.searchYearlyConsumption(year)!!
+            }
+            else {
+                throw Exception("")
+            }
     }
 }
