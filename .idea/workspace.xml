@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="daegg">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" afterDir="false" />
-    </list>
+    <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="baseprogramm finished, Junittests + javadoc open" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +87,7 @@
       <workItem from="1664882000920" duration="2701000" />
       <workItem from="1664969417327" duration="4449000" />
       <workItem from="1665298029956" duration="2662000" />
-      <workItem from="1665301035104" duration="22188000" />
+      <workItem from="1665301035104" duration="22259000" />
     </task>
     <task id="LOCAL-00001" summary="daegg">
       <created>1664884003207</created>
@@ -127,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665323072827</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="baseprogramm finished, Junittests + javadoc open">
+      <created>1665323299149</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665323299149</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="daegg" />
-    <option name="LAST_COMMIT_MESSAGE" value="daegg" />
+    <MESSAGE value="baseprogramm finished, Junittests + javadoc open" />
+    <option name="LAST_COMMIT_MESSAGE" value="baseprogramm finished, Junittests + javadoc open" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
