@@ -18,12 +18,12 @@ class Menu() : Runnable {
         println("Choose your desired Action:")
         var quit = false
         while (!quit) {
-            menuItems.values.reversed().forEach { item: MenuItem -> println(item.command.lowercase() + " -> " + item.description) }
+            menuItems.values.reversed().forEach { item: MenuItem -> println(item.command + " -> " + item.description) }
             print(">")
             val input = readLine()
             if (menuItems[input] == null) {
                 println("Incorrect Input")
-            } else if (input == "q") {
+            } else if (input == "Q") {
                 quit = true
             } else {
                 menuItems[input]!!.performAction()
