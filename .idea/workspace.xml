@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="baseprogramm finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/menu/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/menu/Menu.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/fatweedington/IdeaProjects/Kotlin/GasConsumption/src/main/kotlin/utilities/validators",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.kdocer.service.KDocerConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fatweedington/IdeaProjects/Kotlin/GasConsumption/src/main/kotlin/utilities/validators&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.kdocer.service.KDocerConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\fatweedington\IdeaProjects\Kotlin\GasConsumption\src\main\kotlin\utilities\validators" />
@@ -171,7 +172,8 @@
       <workItem from="1665301035104" duration="22259000" />
       <workItem from="1665332323903" duration="77000" />
       <workItem from="1665332529438" duration="666000" />
-      <workItem from="1665333205991" duration="10061000" />
+      <workItem from="1665333205991" duration="10408000" />
+      <workItem from="1665413912753" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="daegg">
       <created>1664884003207</created>
@@ -236,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665343162704</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="baseprogramm finished">
+      <created>1665343289755</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665343289755</updated>
+    </task>
+    <task id="LOCAL-00011" summary="baseprogramm finished">
+      <created>1665343492747</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665343492747</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -40,10 +40,10 @@ fun initMenu(): Menu {
             monthlyConsumption.getMonth().name.lowercase()
                 .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }+" "+monthlyConsumption.getYear()))
         if (unit){
-            print(monthlyConsumption.getConsumptionM3().toString()+"m3"+"\n"+"\n")
+            print(monthlyConsumption.getConsumptionM3().toString()+"m3\n\n")
         }
         else {
-            print(round(monthlyConsumption.getConsumptionKWh(),2).toString()+"kWh"+"\n"+"\n")
+            print(round(monthlyConsumption.getConsumptionKWh(),2).toString()+"kWh\n\n")
         }
     }
 
