@@ -14,7 +14,7 @@ class ConsoleInput<V>(private val prompt: String, private val validator: Validat
             try {
                 input = validator.validate(stringInput,data)
             } catch (e: Exception) {
-                println("Invalid input try again:")
+                println(e.message)
             }
         }
         return input

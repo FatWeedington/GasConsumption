@@ -9,7 +9,7 @@ class UnitValidator: Validator<Boolean>{
         return  when (string){
             "m3" -> true
             "kWh" -> false
-            else -> throw Exception("")
+            else -> throw Exception("${string} is not a supported unit")
         }
 
     }

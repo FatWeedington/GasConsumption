@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="base program finished" />
+    <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="base program finished">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apps/Cli.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/ConsoleInput.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/ConsoleInput.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/MonthlyConsumptionValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/MonthlyConsumptionValidator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/UnitValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/UnitValidator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/YearlyConsumptionValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/validators/YearlyConsumptionValidator.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,6 +180,8 @@
       <workItem from="1665830702390" duration="1824000" />
       <workItem from="1665833496910" duration="96000" />
       <workItem from="1665834613330" duration="462000" />
+      <workItem from="1665835760871" duration="292000" />
+      <workItem from="1665844916520" duration="1522000" />
     </task>
     <task id="LOCAL-00001" summary="daegg">
       <created>1664884003207</created>
@@ -279,7 +288,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665835058846</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="base program finished">
+      <created>1665835806345</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665835806345</updated>
+    </task>
+    <task id="LOCAL-00017" summary="base program finished">
+      <created>1665836020976</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665836020976</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,8 +333,18 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/utilities/validators/MonthlyConsumptionValidator.kt</url>
+          <line>29</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="((HashMap)((Data)data).yearlyConsumptions).entrySet().toArray()[0]" custom="java.util.HashMap,model.Data" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

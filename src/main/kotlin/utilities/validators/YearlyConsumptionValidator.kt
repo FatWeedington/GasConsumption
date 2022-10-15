@@ -11,13 +11,13 @@ class YearlyConsumptionValidator: Validator<YearlyConsumption>{
             if (string.matches(Regex("([0-9]{4})"))) {
                 year = string.toInt()
             } else {
-                throw Exception("")
+                throw Exception("${string} does not match valid year e.g 2019")
             }
             if(data.searchYearlyConsumption(year)!= null){
                 return data.searchYearlyConsumption(year)!!
             }
             else {
-                throw Exception("")
+                throw Exception("data for year ${string} is not available")
             }
     }
 }

@@ -38,7 +38,7 @@ fun main() {
     }
 
     private val queryMonth = Runnable {
-        val monthlyConsumption = ConsoleInput("Enter Month and Year",MonthlyConsumptionValidator(), data).enterValue()
+        val monthlyConsumption = ConsoleInput("Enter the month and the year",MonthlyConsumptionValidator(), data).enterValue()
         val unit = ConsoleInput("Do you want Consumption by m3 or by kWh? m3:m3 and kWh:kWh",UnitValidator(), data).enterValue()
         print(String.format("%-15s",
             monthlyConsumption.getMonth().name.lowercase()
