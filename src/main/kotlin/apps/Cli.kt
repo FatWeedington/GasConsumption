@@ -8,7 +8,6 @@ import utilities.round
 import utilities.validators.MonthlyConsumptionValidator
 import utilities.validators.UnitValidator
 import utilities.validators.YearlyConsumptionValidator
-import java.util.*
 
 
 private val data = Data()
@@ -43,7 +42,7 @@ fun main() {
         val unit = ConsoleInput("Do you want Consumption by m3 or by kWh? m3:m3 and kWh:kWh",UnitValidator(), data).enterValue()
         print(String.format("%-15s",
             monthlyConsumption.getMonth().name.lowercase()
-                .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }+" "+monthlyConsumption.getYear()))
+                .replaceFirstChar { it.titlecase()}+" "+monthlyConsumption.getYear()))
         if (unit){
             print(monthlyConsumption.getConsumptionM3().toString()+"m3\n\n")
         }
