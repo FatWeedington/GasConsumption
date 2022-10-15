@@ -2,7 +2,6 @@ package model
 
 import utilities.round
 import java.time.Month
-import java.util.*
 import kotlin.math.roundToInt
 
 //represents a summary of all Monthly consumption objects in one year and calculates required parameters

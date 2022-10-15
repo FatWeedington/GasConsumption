@@ -1,8 +1,6 @@
 package utilities.validators
 
 import model.Data
-import model.MonthlyConsumption
-import java.time.Month
 
 //validator checks string input with regex and returns boolean value for defining unit while printing Consumption details on MonthlyConsumption Object
 class UnitValidator: Validator<Boolean>{

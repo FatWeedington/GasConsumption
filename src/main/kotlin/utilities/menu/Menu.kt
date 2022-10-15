@@ -1,7 +1,5 @@
 package utilities.menu
 
-import java.util.*
-
 
 //menu consisting menu items different menus can be nested within each other
 class Menu() : Runnable {

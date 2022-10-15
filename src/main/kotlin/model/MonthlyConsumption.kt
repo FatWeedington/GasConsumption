@@ -2,8 +2,6 @@ package model
 
 import java.time.LocalDate
 import java.time.Month
-import java.util.*
-import kotlin.math.pow
 import kotlin.math.roundToInt
 
 data class MonthlyConsumption(private val beginDate: LocalDate,

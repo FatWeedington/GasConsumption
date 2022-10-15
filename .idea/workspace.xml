@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="base program finished">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/MonthlyConsumption.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/YearlyConsumption.kt" afterDir="false" />
-    </list>
+    <list default="true" id="11b95116-76eb-4cd7-a2d9-27cf13a6011e" name="Changes" comment="base program finished" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +172,7 @@
       <workItem from="1665414376417" duration="137000" />
       <workItem from="1665830702390" duration="1824000" />
       <workItem from="1665833496910" duration="96000" />
-      <workItem from="1665834613330" duration="301000" />
+      <workItem from="1665834613330" duration="462000" />
     </task>
     <task id="LOCAL-00001" summary="daegg">
       <created>1664884003207</created>
@@ -276,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665832487434</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="base program finished">
+      <created>1665835058846</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665835058846</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

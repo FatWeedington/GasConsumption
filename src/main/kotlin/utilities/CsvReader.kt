@@ -1,6 +1,5 @@
 package utilities
 
-import model.Data
 import model.MonthlyConsumption
 import java.io.File
 import java.time.LocalDate

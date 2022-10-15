@@ -1,7 +1,6 @@
 package utilities.validators
 
 import model.Data
-import model.MonthlyConsumption
 import model.YearlyConsumption
 
 //validator checks string input with regex and searches data object for secified year throws exeption if year is not found

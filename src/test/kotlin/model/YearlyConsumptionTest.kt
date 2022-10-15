@@ -1,10 +1,8 @@
 package model
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
 import utilities.round
-import java.awt.JobAttributes
 import java.time.LocalDate
 import java.time.Month
 
