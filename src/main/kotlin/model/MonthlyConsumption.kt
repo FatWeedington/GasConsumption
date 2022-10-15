@@ -34,8 +34,8 @@ data class MonthlyConsumption(private val beginDate: LocalDate,
 
     //Prints parameters to cli
     override fun toString():String{
-        return String.format("%-9s %-6s %-17s %-18s",getMonth().name.lowercase(Locale.getDefault())
-            .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+        return String.format("%-9s %-6s %-17s %-18s",getMonth().name.lowercase()
+            .replaceFirstChar { it.titlecase() }
             ,getYear(),getConsumptionM3(),getConsumptionKWh().roundToInt())
     }
 }

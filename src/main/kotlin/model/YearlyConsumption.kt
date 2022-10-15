@@ -54,9 +54,9 @@ data class YearlyConsumption(val year:Int) {
 
     //Prints parameters to cli
     override fun toString():String{
-        return String.format("%-5s %-13s %-17s %-9s %-10s %-8s %-10s %-10s",year,getMonthsTotal(),getTotalConsumption().roundToInt().toString()+"kWh",getMaxConsumption().roundToInt().toString()+"kWh",getMaxMonth().name.lowercase(
-            Locale.getDefault()).replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },getMinConsumption().roundToInt().toString()+"kWh",getMinMonth().name.lowercase(
-            Locale.getDefault()).replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },getAverage().toString()+"kWh")
+        return String.format("%-5s %-13s %-17s %-9s %-10s %-8s %-10s %-10s",year,getMonthsTotal(),getTotalConsumption().roundToInt().toString()+"kWh",getMaxConsumption().roundToInt().toString()+"kWh",
+            getMaxMonth().name.lowercase().replaceFirstChar { it.titlecase()},getMinConsumption().roundToInt().toString()+"kWh",
+            getMinMonth().name.lowercase().replaceFirstChar { it.titlecase()},getAverage().toString()+"kWh")
     }
 
 }
