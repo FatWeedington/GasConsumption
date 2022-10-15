@@ -19,7 +19,7 @@ fun main() {
 }
 
 //initializes Menu and Menu items for cli application
-fun initMenu(): Menu {
+ private fun initMenu(): Menu {
         val mainMenu = Menu()
 
         mainMenu.add(MenuItem("cm", "Calculate consumptions for every Month", calcMonths))
@@ -28,7 +28,7 @@ fun initMenu(): Menu {
         mainMenu.add(MenuItem("y", "Get information about a specific year", queryYear))
         mainMenu.add(MenuItem("Q", "Quit Application", null))
 
-        return mainMenu;
+        return mainMenu
     }
 
 
