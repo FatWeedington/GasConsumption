@@ -6,15 +6,16 @@ import java.util.*
 import kotlin.math.roundToInt
 
 //represents a summary of all Monthly consumption objects in one year and calculates required parameters
-class YearlyConsumption(val year:Int) {
+data class YearlyConsumption(val year:Int) {
 
-    private val monthlyConsumptions:MutableList<MonthlyConsumption> = mutableListOf()
+    private val monthlyConsumptions= mutableListOf<MonthlyConsumption>()
 
     //add new monthly consumption to year
     fun addConsumption(monthlyConsumption:MonthlyConsumption){
         if(!monthlyConsumptions.stream().map { c -> c.getMonth()}.anyMatch {c -> c.equals(monthlyConsumption.getMonth())}){
         monthlyConsumptions.add(monthlyConsumption)}
         }
+
 
     //returns total of MonthlyConsumption objects stored
     fun getMonthsTotal():Int {
@@ -58,22 +59,5 @@ class YearlyConsumption(val year:Int) {
             Locale.getDefault()).replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },getAverage().toString()+"kWh")
     }
 
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as YearlyConsumption
-
-        if (year != other.year) return false
-        if (monthlyConsumptions != other.monthlyConsumptions) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        var result = year
-        result = 31 * result + monthlyConsumptions.hashCode()
-        return result
-    }
 }
 

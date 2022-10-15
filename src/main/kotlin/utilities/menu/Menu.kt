@@ -5,7 +5,7 @@ import java.util.*
 
 //menu consisting menu items different menus can be nested within each other
 class Menu() : Runnable {
-    private val menuItems: MutableMap<String, MenuItem> = sortedMapOf()
+    private val menuItems = sortedMapOf<String, MenuItem>()
     fun add(menuItem: MenuItem) {
         if (menuItems.containsKey(menuItem.command)) {
             throw RuntimeException("Menu Item already exists")

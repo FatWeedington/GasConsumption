@@ -13,6 +13,11 @@ import java.util.*
 
 private val data = Data()
 
+//starts program
+fun main() {
+    initMenu().run()
+}
+
 //initializes Menu and Menu items for cli application
 fun initMenu(): Menu {
         val mainMenu = Menu()
@@ -59,10 +64,6 @@ fun initMenu(): Menu {
         println()
     }
 
-//starts program
-fun main() {
-        initMenu().run()
-    }
 
 
 

@@ -8,11 +8,11 @@ import java.time.format.DateTimeFormatter
 
 //function to generate a list Monthlyconsumption Objects based on data stored in file gasreading.csv
 fun readCSV():List<MonthlyConsumption>{
-    val consumptions:MutableList<MonthlyConsumption> = ArrayList()
+    val consumptions = ArrayList<MonthlyConsumption>()
     //read file line by line
-    val lines :List<String> = File("data"+File.separator+"gasreading.csv").readLines()
+    val lines = File("data"+File.separator+"gasreading.csv").readLines()
 
-    // iterate throug lines of csv
+    // iterate through lines of csv
     for(l in lines.subList(1, lines.size)){
         // Split single line by ","
         val fields = l.split(",")

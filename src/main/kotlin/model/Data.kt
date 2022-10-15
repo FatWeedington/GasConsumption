@@ -7,8 +7,8 @@ import java.time.Month
 //represtents storage of Monhly/Yearly gas consumptions
 class Data {
 
-    private var monthlyConsumptions:MutableList<MonthlyConsumption> = ArrayList()
-    private var yearlyConsumptions:MutableMap<Int,YearlyConsumption> = HashMap()
+    private var monthlyConsumptions= ArrayList<MonthlyConsumption>()
+    private var yearlyConsumptions= HashMap<Int,YearlyConsumption>()
     init {
         //read csv file and adds MotnhlyCosumptions to internal list
         monthlyConsumptions.addAll(readCSV())
