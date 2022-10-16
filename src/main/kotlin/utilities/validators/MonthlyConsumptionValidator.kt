@@ -23,7 +23,7 @@ class MonthlyConsumptionValidator: Validator<MonthlyConsumption>{
             "OCT" -> Month.OCTOBER
             "NOV" -> Month.NOVEMBER
             "DEC" -> Month.DECEMBER
-            else -> throw Exception("")
+            else -> throw Exception("${strings[0]} is not a valid month")
         }
         //Defines Year
         val year:Int
@@ -31,10 +31,13 @@ class MonthlyConsumptionValidator: Validator<MonthlyConsumption>{
             year =  strings[1].toInt()
         }
         else{
-            throw Exception("")
+            throw Exception("${strings[1]} does not match valid year e.g 2019")
         }
         //returns object if found in data object (Throws exeption if nothing found)
-        return data.searchMonthlyConsumption(year,month)
+        if (data.searchMonthlyConsumption(year,month) == null){
+            throw Exception("data for ${strings[0]} ${strings[1]} is not available")
+        }
+        else return data.searchMonthlyConsumption(year,month)!!
     }
 
 }

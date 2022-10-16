@@ -36,8 +36,8 @@ class Data {
     }
 
     //searches Monthly consumption list for Object with specified year and month
-    fun searchMonthlyConsumption(year:Int, month: Month):MonthlyConsumption{
-        return monthlyConsumptions.filter { it.getYear() == year}.filter { it.getMonth() == month }[0]
+    fun searchMonthlyConsumption(year:Int, month: Month):MonthlyConsumption?{
+        return monthlyConsumptions.asSequence().filter { it.getYear() == year }.filter { it.getMonth() == month }.firstOrNull()
     }
 
     //searches yearly consumption list for Object with specified year
