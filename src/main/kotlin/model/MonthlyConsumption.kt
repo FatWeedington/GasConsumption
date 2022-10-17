@@ -5,30 +5,26 @@ import java.time.Month
 import kotlin.math.roundToInt
 
 data class MonthlyConsumption(private val beginDate: LocalDate,
-                         private val endDate:LocalDate,
-                         private val beginIndx:Int,
-                         private val endIndx:Int,
-                         private val kpcs:Double) {
+                              private val endDate:LocalDate,
+                              private val beginIndex:Int,
+                              private val endIndex:Int,
+                              private val kpcs:Double) {
 
     //calculates and returns Consumption in m3 of month given the start and end indices
-    fun getConsumptionM3():Int{
-        return endIndx - beginIndx
-    }
+    fun getConsumptionM3() = endIndex - beginIndex
+
 
     //calculates and returns gas consumption in KwH
-    fun getConsumptionKWh():Double{
-        return (getConsumptionM3()*kpcs)
-    }
+    fun getConsumptionKWh() = (getConsumptionM3()*kpcs)
+
 
     //returns year of the Month
-    fun getYear():Int{
-        return endDate.year
-    }
+    fun getYear() =  endDate.year
+
 
     //returns Month as a Month object
-    fun getMonth():Month{
-        return endDate.month
-    }
+    fun getMonth(): Month = endDate.month
+
 
     //Prints parameters to cli
     override fun toString():String{

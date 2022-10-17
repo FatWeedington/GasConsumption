@@ -26,22 +26,19 @@ class Data {
     }
 
     // returns immutable list of all monthly consumption objects stored
-    fun getMonthlyConsumptions():List<MonthlyConsumption>{
-        return monthlyConsumptions.toList()
-    }
+    fun getMonthlyConsumptions() = monthlyConsumptions.toList()
+
 
     // returns immutable list of all yearly consumption objects stored
-    fun getYearlyConsumptions():List<YearlyConsumption>{
-        return yearlyConsumptions.values.toList()
-    }
+    fun getYearlyConsumptions() =  yearlyConsumptions.values.toList()
+
 
     //searches Monthly consumption list for Object with specified year and month
-    fun searchMonthlyConsumption(year:Int, month: Month):MonthlyConsumption?{
-        return monthlyConsumptions.asSequence().filter { it.getYear() == year }.filter { it.getMonth() == month }.firstOrNull()
-    }
+    fun searchMonthlyConsumption(year:Int, month: Month)=
+        monthlyConsumptions.asSequence().filter { it.getYear() == year }.filter { it.getMonth() == month }.firstOrNull()
+
 
     //searches yearly consumption list for Object with specified year
-    fun searchYearlyConsumption(year: Int): YearlyConsumption? {
-        return yearlyConsumptions[year]
-    }
+    fun searchYearlyConsumption(year: Int) = yearlyConsumptions[year]
+
 }
