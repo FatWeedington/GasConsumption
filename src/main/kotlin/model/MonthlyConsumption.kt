@@ -4,11 +4,11 @@ import java.time.LocalDate
 import java.time.Month
 import kotlin.math.roundToInt
 
-data class MonthlyConsumption(private val beginDate: LocalDate,
-                              private val endDate:LocalDate,
-                              private val beginIndex:Int,
-                              private val endIndex:Int,
-                              private val kpcs:Double) {
+data class MonthlyConsumption( val beginDate: LocalDate,
+                               val endDate:LocalDate,
+                               val beginIndex:Int,
+                               val endIndex:Int,
+                               val kpcs:Double) {
 
     //calculates and returns Consumption in m3 of month given the start and end indices
     fun getConsumptionM3() = endIndex - beginIndex

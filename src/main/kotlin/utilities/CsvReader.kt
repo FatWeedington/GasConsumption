@@ -2,6 +2,7 @@ package utilities
 
 import model.MonthlyConsumption
 import java.io.File
+import java.io.FileReader
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -9,7 +10,7 @@ import java.time.format.DateTimeFormatter
 fun readCSV():List<MonthlyConsumption>{
     val consumptions = ArrayList<MonthlyConsumption>()
     //read file line by line
-    val lines = File("data"+File.separator+"gasreading.csv").readLines()
+    val lines = FileReader("data"+File.separator+"gasreading.csv").useLines { it.toList() }
 
     // iterate through lines of csv
     for(l in lines.subList(1, lines.size)){
