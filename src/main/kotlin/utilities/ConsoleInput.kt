@@ -10,7 +10,7 @@ class ConsoleInput<V>(private val prompt: String, private val validator: Validat
         var input: V? = null
         while (input == null) {
             println(prompt)
-            val stringInput = readLine()!!
+            val stringInput = readln()
             try {
                 input = validator.validate(stringInput,data)
             } catch (e: Exception) {
